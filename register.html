@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | P2P Library</title>
+  <link rel="stylesheet" href="./css/register.css" />
+</head>
+<body>
+  <div class="register-container">
+    <h1>📝 Register to P2P Library</h1>
+    <form id="register-form">
+      <label for="username">Username</label>
+      <input type="text" id="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" required />
+
+      <button type="submit">Register</button>
+    </form>
+    <div id="register-message"></div>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+
+  <script src="./js/register.js"></script>
+</body>
+</html>

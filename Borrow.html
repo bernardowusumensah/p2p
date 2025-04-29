@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Borrow a Book | P2P Library</title>
+  <link rel="stylesheet" href="./css/borrow.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📖 Borrow a Book</h1>
+
+    <form id="borrow-form">
+      <label for="book-id">Choose a Book</label>
+      <select id="book-id" name="book-id" required>
+        <option value="" disabled selected>Select a book</option>
+        <!-- JS will populate this with book titles and IDs -->
+      </select>
+
+      <label for="borrower-name">Your Name</label>
+      <input type="text" id="borrower-name" required />
+
+      <label for="duration">Duration</label>
+      <select id="duration" required>
+        <option value="">-- Select Duration --</option>
+        <option value="1 Week">1 Week</option>
+        <option value="2 Weeks">2 Weeks</option>
+        <option value="3 Weeks">3 Weeks</option>
+      </select>
+
+      <button type="submit">Request Borrow</button>
+    </form>
+    <div id="message"></div>
+    <div class="back">
+      <a href="./home.html">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <script src="./js/borrow.js"></script>
+</body>
+</html>

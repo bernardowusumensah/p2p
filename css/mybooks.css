@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #0e1a3b;
+    color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #132a57;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+  }
+  
+  .user-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #345;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1e3a5f;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 10px 12px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 0 10px;
+  }
+  
+  .book-card {
+    background-color: #1e2f5a;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  .book-card img {
+    width: 50%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+  
+  .book-info {
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  
+  footer {
+    background-color: #132a57;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
+  }
+  

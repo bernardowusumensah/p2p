@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add a Book</title>
+  <link rel="stylesheet" href="./css/AddBooks.css" />
+  
+  </head>
+<body>
+  <div class="container">
+    <h1 class="heading">📚 Add a New Book</h1>
+    
+    <form id="book-form">
+      <div class="form-group">
+        <label for="title">Book Title</label>
+        <input type="text" id="title" placeholder="e.g. Clean Code" required />
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" id="author" placeholder="e.g. Robert C. Martin" required />
+      </div>
+
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input type="text" id="isbn" placeholder="e.g. 9780132350884" required />
+      </div>
+
+
+      <select id="genre" required>
+        <option value="">-- Select Genre --</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Mobile Development">Mobile Development</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Cybersecurity">Cybersecurity</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Software Architecture">Software Architecture</option>
+        <option value="Programming Languages">Programming Languages</option>
+        <option value="Tech Entrepreneurship">Tech Entrepreneurship</option>
+        <option value="Other">Other</option>
+      </select>
+      
+      <label for="cover">Cover Image URL:</label>
+      <input type="url" id="cover" name="cover" placeholder="https://example.com/book.jpg" />
+
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Brief summary of the book..." rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Add Book</button>
+    </form>
+
+    <div id="cover-preview" class="cover-preview"></div>
+  </div>
+  <script src="./js/addbooks.js"></script
+</body>
+</html>
